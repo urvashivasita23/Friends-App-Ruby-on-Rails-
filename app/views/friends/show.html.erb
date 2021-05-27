@@ -1,0 +1,27 @@
+
+
+
+
+<div class="jumbotron" style="background-color: #D3D3D3";>
+  <h1 class="display-4"><%= @friend.first_name %>  <%= @friend.last_name %></h1>
+  <p class="lead"> <%= @friend.email %>|  <%= @friend.phone %>|<%= @friend.twitter %>
+</p>
+  <hr class="my-4">
+ 
+ <%= link_to 'Edit', edit_friend_path(@friend) ,class:"btn btn-secondary"%> 
+<%= link_to 'Back', friends_path,class:"btn btn-dark" %>
+<%= link_to 'Delete', @friend, method: :delete, class:'btn btn-danger',data: { confirm: 'Are you sure?' } %>
+</br></br>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
